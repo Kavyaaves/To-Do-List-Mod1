@@ -1,38 +1,83 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+body {
+  font-family: "Roboto Mono", monospace;
+  background: url("https://i.imgur.com/w7uexG8.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.app {
+  background-color: transparent;
+  min-height: 500px;
+  width: 400px;
+  margin: 40px auto;
+}
+
+.h1 {
   text-align: center;
+  font-size: 40px;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.to-doForm input {
+  background: #fceabb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f8b500,
+    #fceabb
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f8b500,
+    #fceabb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border: 0;
+  width: 210px;
+  height: 50px;
+  padding: 0 20px;
+  margin: 20px;
+  margin-right: 0;
+  font-size: 15px;
+  border-radius: 18px;
+  color: #353839;
+  font-family: "Kalam", cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.to-doForm input::placeholder {
+  color: #696969;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.to-doForm input:focus,
+.to-doForm button:focus {
+  outline: none;
+  outline-style: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.to-doForm button {
+  height: 50px;
+  width: 80px;
+  border: 0;
+  margin: 0 20px;
+  border-radius: 10px;
+  background-color: orangered;
+  cursor: pointer;
+  font-weight: lighter;
+  color: #fff;
+  font-size: large;
+  background: #fdc830; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fdc830,
+    #f37335
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fdc830,
+    #f37335
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
